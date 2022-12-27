@@ -11,33 +11,7 @@ public:
 		_year = year;
 	}
 
-	bool operator>(int a) {
-		if (_year > a)
-			return true;
-		else 
-			return false;
-	}
-
-	bool operator<(int a) {
-		if (_year > a)
-			return true;
-		else
-			return false;
-	}
-
-	bool operator==(int a) {
-		if (_year == a)
-			return true;
-		else
-			return false;
-	}
-
-	bool operator!=(int a) {
-		if (_year != a)
-			return true;
-		else
-			return false;
-	}
+	operator int() const { return _year; }
 
 	std::string getName() { return _name; }
 	std::string getAuthor() { return _author; }
